@@ -6,6 +6,8 @@ import (
 	"kinsta/services/log"
 	"os"
 
+	"github.com/spf13/viper"
+
 	"github.com/labstack/echo"
 	"github.com/labstack/echo/middleware"
 )
@@ -32,6 +34,14 @@ func main() {
 	// recover
 	e.Use(middleware.Recover())
 
+	// httpauth
+	e.Use(middleware.BasicAuth(func(user, password string, c echo.Context) (bool, error) {
+		if user == viper.GetString("user") && password == viper.GetString("password") {
+			return true, nil
+		}
+		log.Infof("%s - bad password |%s| for user |%s|", c.RealIP(), password, user)
+		return false, nil
+	}))
 	// routes
 
 	// go go go !!
