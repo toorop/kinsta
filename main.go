@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"kinsta/services/config"
+	"kinsta/services/log"
 	"os"
 
 	"github.com/labstack/echo"
@@ -22,6 +23,10 @@ func main() {
 		fmt.Printf("config.Init(%s) failed - %v", home, err)
 	}
 
+	// log
+	log.InitLogger(os.Stdout)
+
+	// echo
 	e := echo.New()
 
 	// recover
