@@ -2,14 +2,14 @@ package main
 
 import (
 	"fmt"
+	"kinsta/handlers"
 	"kinsta/services/config"
 	"kinsta/services/log"
 	"os"
 
-	"github.com/spf13/viper"
-
 	"github.com/labstack/echo"
 	"github.com/labstack/echo/middleware"
+	"github.com/spf13/viper"
 )
 
 func main() {
@@ -42,7 +42,11 @@ func main() {
 		log.Infof("%s - bad password |%s| for user |%s|", c.RealIP(), password, user)
 		return false, nil
 	}))
+
 	// routes
+
+	// GET usenname
+	e.GET("user/:username", handlers.GetUser)
 
 	// go go go !!
 	e.Logger.Fatal(e.Start(":1323"))
