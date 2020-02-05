@@ -8,7 +8,6 @@ import (
 	"path/filepath"
 
 	"github.com/tcnksm/go-input"
-
 	"github.com/toorop/goinsta/v2"
 )
 
