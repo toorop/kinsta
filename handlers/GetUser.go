@@ -5,6 +5,7 @@ import (
 	"kinsta/services/insta"
 	"net/http"
 	"strconv"
+	"strings"
 	"time"
 
 	"github.com/labstack/echo"
@@ -44,6 +45,10 @@ func GetUser(c echo.Context) (err error) {
 
 	user, err := insta.Client.Profiles.ByName(username)
 	if err != nil {
+		// not found ?
+		if strings.Contains(err.Error(), "found") {
+			return c.String(http.StatusNotFound, fmt.Sprintf("user %s nor found", username))
+		}
 		return c.String(http.StatusInternalServerError, fmt.Sprintf("insta.Client.Profiles.ByName(%s) failed: %v", username, err))
 	}
 
