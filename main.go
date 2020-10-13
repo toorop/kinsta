@@ -2,10 +2,10 @@ package main
 
 import (
 	"fmt"
-	"kinsta/handlers"
-	"kinsta/services/config"
-	"kinsta/services/insta"
-	"kinsta/services/log"
+	"github.com/toorop/kinsta/handlers"
+	"github.com/toorop/kinsta/services/config"
+	"github.com/toorop/kinsta/services/insta"
+	"github.com/toorop/kinsta/services/log"
 	"os"
 	"path/filepath"
 

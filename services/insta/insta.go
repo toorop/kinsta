@@ -1,19 +1,21 @@
 package insta
 
 import (
+	"fmt"
 	"os"
 
 	"github.com/tcnksm/go-input"
-	"github.com/toorop/goinsta/v2"
+	"github.com/toorop/goinsta"
 )
 
 var Client *goinsta.Instagram
 
 func InitInsta() error {
 	// test insta
-	Client = goinsta.New("peerpx", "w3R2FaM55")
+	Client = goinsta.New("peerpx", "w3R2FaM555")
 
 	if err := Client.Login(); err != nil {
+		fmt.Printf("Error login: %v", err)
 		switch v := err.(type) {
 		case goinsta.ChallengeError:
 			err := Client.Challenge.Process(v.Challenge.APIPath)
@@ -40,8 +42,9 @@ func InitInsta() error {
 			if err != nil {
 				return err
 			}
+			Client.Account = Client.Challenge.LoggedInUser
 		}
-		return err
+		//return err
 	}
 	return nil
 }

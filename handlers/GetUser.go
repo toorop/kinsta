@@ -2,14 +2,14 @@ package handlers
 
 import (
 	"fmt"
-	"kinsta/services/insta"
+	"github.com/toorop/kinsta/services/insta"
 	"net/http"
 	"strconv"
 	"strings"
 	"time"
 
 	"github.com/labstack/echo"
-	"github.com/toorop/goinsta/v2"
+	"github.com/toorop/goinsta"
 )
 
 // GetUser retourne les info d'un user
