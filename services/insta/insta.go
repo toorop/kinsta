@@ -12,7 +12,7 @@ var Client *goinsta.Instagram
 
 func InitInsta() error {
 	// test insta
-	Client = goinsta.New("peerpx", "w3R2FaM555")
+	Client = goinsta.New("peerpx", "w3R2FaM55522")
 
 	if err := Client.Login(); err != nil {
 		fmt.Printf("Error login: %v", err)
