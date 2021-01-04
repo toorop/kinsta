@@ -20,11 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f19cf2ca-3ad2-4a33-aee4-626e5c956db3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/stephane.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/kinsta.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/kinsta.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/conf.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/dist/conf.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/insta/insta.go" beforeDir="false" afterPath="$PROJECT_DIR$/services/insta/insta.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -92,7 +89,8 @@
     <MESSAGE value="hdl getUser" />
     <MESSAGE value="change passwd" />
     <MESSAGE value="update" />
-    <option name="LAST_COMMIT_MESSAGE" value="update" />
+    <MESSAGE value="update pswwd" />
+    <option name="LAST_COMMIT_MESSAGE" value="update pswwd" />
   </component>
   <component name="VgoProject">
     <environment>
@@ -101,34 +99,5 @@
       </map>
     </environment>
     <proxy>direct</proxy>
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="3044" y="1209" width="471" height="149" key="#GOROOT" timestamp="1600947895953">
-      <screen x="2560" y="0" width="1440" height="2560" />
-    </state>
-    <state x="4324" y="1209" width="471" height="149" key="#GOROOT/0.27.3840.2133/5280.0.3440.1440/3840.0.1440.2560@3840.0.1440.2560" timestamp="1598685696058" />
-    <state x="3044" y="1209" key="#GOROOT/0.30.2560.1410/4000.0.3440.1440/2560.0.1440.2560@2560.0.1440.2560" timestamp="1600947895953" />
-    <state x="4099" y="762" width="912" height="1042" key="CommitChangelistDialog2" timestamp="1598687185244">
-      <screen x="3840" y="0" width="1440" height="2560" />
-    </state>
-    <state x="4099" y="762" width="912" height="1042" key="CommitChangelistDialog2/0.27.3840.2133/5280.0.3440.1440/3840.0.1440.2560@3840.0.1440.2560" timestamp="1598687185244" />
-    <state x="3063" y="1038" width="775" height="982" key="FileChooserDialogImpl" timestamp="1600948641188">
-      <screen x="2560" y="0" width="1440" height="2560" />
-    </state>
-    <state x="3063" y="1038" width="775" height="982" key="FileChooserDialogImpl/0.30.2560.1410/4000.0.3440.1440/2560.0.1440.2560@2560.0.1440.2560" timestamp="1600948641188" />
-    <state x="2769" y="915" width="1022" height="737" key="SettingsEditor" timestamp="1600951879557">
-      <screen x="2560" y="0" width="1440" height="2560" />
-    </state>
-    <state x="4049" y="915" width="1022" height="737" key="SettingsEditor/0.27.3840.2133/5280.0.3440.1440/3840.0.1440.2560@3840.0.1440.2560" timestamp="1598685691778" />
-    <state x="2769" y="915" key="SettingsEditor/0.30.2560.1410/4000.0.3440.1440/2560.0.1440.2560@2560.0.1440.2560" timestamp="1600951879557" />
-    <state x="2875" y="1012" width="800" height="543" key="Vcs.Push.Dialog.v2" timestamp="1602578920625">
-      <screen x="2560" y="0" width="1440" height="2560" />
-    </state>
-    <state x="2875" y="1012" key="Vcs.Push.Dialog.v2/0.27.2560.1413/4000.0.3440.1440/2560.0.1440.2560@2560.0.1440.2560" timestamp="1602578920625" />
-    <state x="4155" y="1012" width="800" height="543" key="Vcs.Push.Dialog.v2/0.27.3840.2133/5280.0.3440.1440/3840.0.1440.2560@3840.0.1440.2560" timestamp="1598687188643" />
-    <state x="3005" y="1187" width="540" height="193" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1600949213609">
-      <screen x="2560" y="0" width="1440" height="2560" />
-    </state>
-    <state x="3005" y="1187" width="540" height="193" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.30.2560.1410/4000.0.3440.1440/2560.0.1440.2560@2560.0.1440.2560" timestamp="1600949213609" />
   </component>
 </project>
