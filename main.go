@@ -2,12 +2,15 @@ package main
 
 import (
 	"fmt"
+	"net/http"
+	"os"
+	"path/filepath"
+	"strconv"
+
 	"github.com/toorop/kinsta/handlers"
 	"github.com/toorop/kinsta/services/config"
 	"github.com/toorop/kinsta/services/insta"
 	"github.com/toorop/kinsta/services/log"
-	"os"
-	"path/filepath"
 
 	"github.com/labstack/echo"
 	"github.com/labstack/echo/middleware"
@@ -59,6 +62,22 @@ func main() {
 	// GET usenname
 	e.GET("/", handlers.GetUser)
 
+	// ping
+	e.GET("/ping", func(c echo.Context) error {
+		return c.String(http.StatusOK, "pong")
+	})
+
 	// go go go !!
-	e.Logger.Fatal(e.Start(":1323"))
+	var port int64
+	port = 1323
+	// port in env (docker)
+	portStr := os.Getenv("PORT")
+	if portStr != "" {
+		port, err = strconv.ParseInt(portStr, 10, 64)
+		if err != nil {
+			log.Errorf("bad port defined in ENV: %s", portStr)
+			os.Exit(1)
+		}
+	}
+	e.Logger.Fatal(e.Start(fmt.Sprintf(":%d", port)))
 }

@@ -2,8 +2,9 @@ package insta
 
 import (
 	"fmt"
-	"github.com/spf13/viper"
 	"os"
+
+	"github.com/spf13/viper"
 
 	"github.com/tcnksm/go-input"
 	"github.com/toorop/goinsta"
@@ -12,6 +13,7 @@ import (
 var Client *goinsta.Instagram
 
 func InitInsta() error {
+	return nil
 	// test insta
 	//Client = goinsta.New("peerpx", "w3R2FaM55522")
 	Client = goinsta.New(viper.GetString("instaUser"), viper.GetString("instaPassword"))
