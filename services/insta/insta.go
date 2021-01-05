@@ -5,7 +5,6 @@ import (
 	"os"
 
 	"github.com/spf13/viper"
-
 	"github.com/tcnksm/go-input"
 	"github.com/toorop/goinsta"
 )
@@ -13,11 +12,18 @@ import (
 var Client *goinsta.Instagram
 
 func InitInsta() error {
-	return nil
-	// test insta
-	//Client = goinsta.New("peerpx", "w3R2FaM55522")
-	Client = goinsta.New(viper.GetString("instaUser"), viper.GetString("instaPassword"))
+	instaUser := os.Getenv("INSTA_LOGIN")
+	if instaUser == "" {
+		instaUser = viper.GetString("instaUser")
+	}
+	instaPassword := os.Getenv("INSTA_PASSWORD")
+	if instaPassword == "" {
+		instaPassword = viper.GetString("instaPassword")
+	}
 
+	//log.Infof("user: %s, password: %s\n", instaUser, instaPassword)
+
+	Client = goinsta.New(instaUser, instaPassword)
 	if err := Client.Login(); err != nil {
 		fmt.Printf("Error login: %v", err)
 		switch v := err.(type) {
@@ -48,7 +54,6 @@ func InitInsta() error {
 			}
 			Client.Account = Client.Challenge.LoggedInUser
 		}
-		//return err
 	}
 	return nil
 }

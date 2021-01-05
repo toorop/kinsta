@@ -20,11 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f19cf2ca-3ad2-4a33-aee4-626e5c956db3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/config/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/services/config/config.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/insta/insta.go" beforeDir="false" afterPath="$PROJECT_DIR$/services/insta/insta.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,7 +134,8 @@
     <MESSAGE value="update pswwd" />
     <MESSAGE value="config via Viper" />
     <MESSAGE value="port from ENV" />
-    <option name="LAST_COMMIT_MESSAGE" value="port from ENV" />
+    <MESSAGE value="dockerfile" />
+    <option name="LAST_COMMIT_MESSAGE" value="dockerfile" />
   </component>
   <component name="VgoProject">
     <environment>
