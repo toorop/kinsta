@@ -135,7 +135,8 @@
     <MESSAGE value="config via Viper" />
     <MESSAGE value="port from ENV" />
     <MESSAGE value="dockerfile" />
-    <option name="LAST_COMMIT_MESSAGE" value="dockerfile" />
+    <MESSAGE value="v0.1.2" />
+    <option name="LAST_COMMIT_MESSAGE" value="v0.1.2" />
   </component>
   <component name="VgoProject">
     <environment>
