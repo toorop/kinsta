@@ -7,13 +7,12 @@ import (
 	"path/filepath"
 	"strconv"
 
+	"github.com/labstack/echo"
+	"github.com/labstack/echo/middleware"
 	"github.com/toorop/kinsta/handlers"
 	"github.com/toorop/kinsta/services/config"
 	"github.com/toorop/kinsta/services/insta"
 	"github.com/toorop/kinsta/services/log"
-
-	"github.com/labstack/echo"
-	"github.com/labstack/echo/middleware"
 )
 
 func main() {

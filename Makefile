@@ -1,5 +1,5 @@
 build:
-	go build -o dist/kinsta
+	CGO_ENABLED=0 go build -o dist/kinsta
 
 run: build
 	dist/kinsta
